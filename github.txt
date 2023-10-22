@@ -56,12 +56,22 @@ git reset
 git add temp.txt
 
 
-
-//
 //commit : Indicate that we are finally ready to commit or ready to push this changes to repo
+git commit -m "first commit" (-m says the message)
 
 
 
+//git log show the all the commits with unique hash id saying that particular commit with dates
+git log
+
+//cloning the remote repo
+git clone <url> . (. represents that we want to clone in current repo or folder)
+
+//viewing information from remote repository
+git remote -v (List the information for the repository)
+
+// to list all the branches in repositories
+git branch -a
 
 
 
