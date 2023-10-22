@@ -84,7 +84,6 @@ git branch newbranch
 
 //to start working on newbranch we have to use checkout 
 // to see which branch you are currently on use (git branch) to list all the branches (* indicates that this is the current branch)
-<<<<<<< HEAD
 git push -u origin newbranch
 
 //now mergin both branches
@@ -92,8 +91,17 @@ git checkout master
 git pull origin master
 git branch --merged // all the branches that we have merged yet
 git merge newbranch
-=======
->>>>>>> newbranch
+
+//to delete the branch from local
+git branch -d newbranch
+
+//to delete the branch from remote repo as well we have to use
+git push origin --delete newbranch
+
+//done
+
+
+
 
 
 
