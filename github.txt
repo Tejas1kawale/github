@@ -73,6 +73,18 @@ git remote -v (List the information for the repository)
 // to list all the branches in repositories
 git branch -a
 
+//whenever we are ready to push changes we have to always pull first because there may be some out there who is doing changes in you live repo
+// to sync with these changes we have to  pull first
+git pull origin master
+git push origin master
+
+// lets say we have to create another brach to work on our new feature
+//to create new branch
+git branch newbranch
+
+//to start working on newbranch we have to use checkout 
+// to see which branch you are currently on use (git branch) to list all the branches (* indicates that this is the current branch)
+
 
 
 
