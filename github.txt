@@ -1,0 +1,69 @@
+// To check the version
+git --version
+
+//To setup the config file to check which uer has done the changes
+
+git config --global user.name "Tejas Kawale"
+git config --global user.email "tejaskawale5@gmail.com"
+
+// To check the config file changes
+git config --list
+
+// for help
+git help config OR
+git config --help
+
+
+//to see all the files and directory in a folder
+ls -la
+or ls
+
+
+//initialize the repository from existing code
+
+// To start traking the local repo
+
+git init
+
+// to remote this .git directory
+rm -rf .git
+
+//git status help us to check the untracked files (files which are there in local with changes ready and not are there in repo as updated)
+git status
+
+//.gitignore  to ignore the files that we dont want to track or upload so that other people wont be able to see that
+touch .gitignore
+
+//.gitignore file is text file where we add our files that we want to uplaod
+//add your files with extension (temp.txt)
+
+//There are three stages working directory,staging area, repository(.git directory) 
+//working directory : all the modified files are there in working directory
+// staging area : Staging are is where we organize what we want to commit in our repo
+//why to use staging are why dont we directly commit because if we want to choose that this particular file change should happen only then we have 
+// to take only those files or changes to staging level so that only those changes will happen
+//or we have lots of files changed now we want to change one by one or bu chunks that will make the repo more informative
+
+//to add all the files that are untracked to staging area
+git add -A
+// to add individually
+git add .gitignore
+
+
+//remving all files from staging area
+git reset
+//to remove a particular file from staging area
+git add temp.txt
+
+
+
+//
+//commit : Indicate that we are finally ready to commit or ready to push this changes to repo
+
+
+
+
+
+
+
+
