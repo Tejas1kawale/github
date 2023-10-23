@@ -46,6 +46,7 @@ touch .gitignore
 
 //to add all the files that are untracked to staging area
 git add -A
+
 // to add individually
 git add .gitignore
 
@@ -78,6 +79,9 @@ git branch -a
 git pull origin master
 git push origin master
 
+//to upload your new project to the github master branch
+git push --set-upstream https://github.com/Tejas1kawale/oofu.git master
+
 // lets say we have to create another brach to work on our new feature
 //to create new branch
 git branch newbranch
@@ -98,7 +102,13 @@ git branch -d newbranch
 //to delete the branch from remote repo as well we have to use
 git push origin --delete newbranch
 
-//done
+//to add any new folder to github
+git init
+git remote add origin [gitLink]
+git remote -v
+git add .
+git commit -m "First commit"
+git push origin master
 
 
 
